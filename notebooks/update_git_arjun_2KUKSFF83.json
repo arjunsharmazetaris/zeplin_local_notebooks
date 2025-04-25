@@ -1,0 +1,75 @@
+{
+  "paragraphs": [
+    {
+      "text": "print(\"hidemo\")",
+      "user": "anonymous",
+      "dateUpdated": "Apr 25, 2025, 6:14:25 PM",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "hidemo\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1745585006163_92643339",
+      "id": "paragraph_1745585006163_92643339",
+      "dateCreated": "Apr 25, 2025, 6:13:26 PM",
+      "dateStarted": "Apr 25, 2025, 6:14:25 PM",
+      "dateFinished": "Apr 25, 2025, 6:14:25 PM",
+      "status": "FINISHED"
+    },
+    {
+      "text": "",
+      "user": "anonymous",
+      "dateUpdated": "Apr 25, 2025, 6:13:50 PM",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1745585020630_1290886070",
+      "id": "paragraph_1745585020630_1290886070",
+      "dateCreated": "Apr 25, 2025, 6:13:40 PM",
+      "status": "READY"
+    }
+  ],
+  "name": "update_git_arjun",
+  "id": "2KUKSFF83",
+  "defaultInterpreterGroup": "python",
+  "version": "0.10.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {},
+  "path": "/update_git_arjun"
+}
