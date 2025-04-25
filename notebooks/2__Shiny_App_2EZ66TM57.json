@@ -1,0 +1,220 @@
+{
+  "paragraphs": [
+    {
+      "title": "Introduction",
+      "text": "%md\n\n[Shiny](https://shiny.rstudio.com/tutorial/) is an R package that makes it easy to build interactive web applications (apps) straight from R. For developing one Shiny App in Zeppelin, you need to at least 3 paragraphs (server paragraph, ui paragraph and run type paragraph)\n",
+      "user": "anonymous",
+      "dateUpdated": "Feb 5, 2020, 1:31:39 PM",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text",
+        "editorHide": true,
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p><a href=\"https://shiny.rstudio.com/tutorial/\">Shiny</a> is an R package that makes it easy to build interactive web applications (apps) straight from R. For developing one Shiny App in Zeppelin, you need to at least 3 paragraphs (server paragraph, ui paragraph and run type paragraph)</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1580880646006_750270749",
+      "id": "paragraph_1580880646006_750270749",
+      "dateCreated": "Feb 5, 2020, 1:30:46 PM",
+      "dateStarted": "Feb 5, 2020, 1:31:30 PM",
+      "dateFinished": "Feb 5, 2020, 1:31:30 PM",
+      "status": "FINISHED"
+    },
+    {
+      "title": "Shiny Server",
+      "text": "%r.shiny(type=server)\n\n# Define server logic to summarize and view selected dataset ----\nserver <- function(input, output) {\n\n    # Return the requested dataset ----\n    datasetInput <- reactive({\n        switch(input$dataset,\n        \"rock\" = rock,\n        \"pressure\" = pressure,\n        \"cars\" = cars)\n    })\n\n    # Generate a summary of the dataset ----\n    output$summary <- renderPrint({\n        dataset <- datasetInput()\n        summary(dataset)\n    })\n\n    # Show the first \"n\" observations ----\n    output$view <- renderTable({\n        head(datasetInput(), n = input$obs)\n    })\n\n}",
+      "user": "anonymous",
+      "dateUpdated": "Jul 31, 2021, 12:35:50 PM",
+      "progress": 0,
+      "config": {
+        "colWidth": 6.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "r",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/r",
+        "type": "server",
+        "runOnSelectionChange": true,
+        "title": true,
+        "checkEmpty": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Write server.R to /tmp/zeppelin-shiny626071477036151736 successfully."
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1580562566379_-876908296",
+      "id": "paragraph_1580562566379_-876908296",
+      "dateCreated": "Feb 1, 2020, 9:09:26 PM",
+      "dateStarted": "Jul 31, 2021, 12:35:50 PM",
+      "dateFinished": "Jul 31, 2021, 12:35:56 PM",
+      "status": "FINISHED"
+    },
+    {
+      "title": "Shiny UI",
+      "text": "%r.shiny(type=ui)\n\n# Define UI for dataset viewer app ----\nui <- fluidPage(\n\n    # App title ----\n    titlePanel(\"Shiny Text\"),\n\n    # Sidebar layout with a input and output definitions ----\n    sidebarLayout(\n\n        # Sidebar panel for inputs ----\n        sidebarPanel(\n    \n            # Input: Selector for choosing dataset ----\n            selectInput(inputId = \"dataset\",\n            label = \"Choose a dataset:\",\n            choices = c(\"rock\", \"pressure\", \"cars\")),\n    \n            # Input: Numeric entry for number of obs to view ----\n            numericInput(inputId = \"obs\",\n            label = \"Number of observations to view:\",\n            value = 10)\n        ),\n\n        # Main panel for displaying outputs ----\n        mainPanel(\n        \n            # Output: Verbatim text for data summary ----\n            verbatimTextOutput(\"summary\"),\n            \n            # Output: HTML table with requested number of observations ----\n            tableOutput(\"view\")\n    \n        )\n    )\n)",
+      "user": "anonymous",
+      "dateUpdated": "Jul 31, 2021, 12:36:00 PM",
+      "progress": 0,
+      "config": {
+        "runOnSelectionChange": true,
+        "title": true,
+        "checkEmpty": true,
+        "colWidth": 6.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "r",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/r",
+        "type": "ui"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Write ui.R to /tmp/zeppelin-shiny626071477036151736 successfully."
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1580562634044_-1915679343",
+      "id": "paragraph_1580562634044_-1915679343",
+      "dateCreated": "Feb 1, 2020, 9:10:34 PM",
+      "dateStarted": "Jul 31, 2021, 12:36:00 PM",
+      "dateFinished": "Jul 31, 2021, 12:36:00 PM",
+      "status": "FINISHED"
+    },
+    {
+      "title": "Shiny App",
+      "text": "%r.shiny(type=run)\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Jul 31, 2021, 12:36:03 PM",
+      "progress": 0,
+      "config": {
+        "runOnSelectionChange": true,
+        "title": true,
+        "checkEmpty": true,
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "r",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/r",
+        "type": "run"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<iframe src=\"http://172.17.0.2:6789\" height =\"500px\" width=\"100%\" frameBorder=\"0\"></iframe>\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "  123: \u001b[37mhead.data.frame\u001b[39m\n  120: \u001b[34m\u001b[1mrenderTable [/tmp/zeppelin-shiny626071477036151736/server.R#22]\u001b[22m\u001b[39m\n  119: \u001b[37mfunc\u001b[39m\n  106: \u001b[37mrenderFunc\u001b[39m\n  105: \u001b[37moutput$view\u001b[39m\n   25: \u001b[37mrunApp\u001b[39m\nWarning message:\n\u201cError in if: missing value where TRUE/FALSE needed\u201d\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1580562660988_2021181385",
+      "id": "paragraph_1580562660988_2021181385",
+      "dateCreated": "Feb 1, 2020, 9:11:00 PM",
+      "dateStarted": "Jul 31, 2021, 12:36:03 PM",
+      "dateFinished": "Jul 31, 2021, 12:36:38 PM",
+      "status": "ABORT"
+    },
+    {
+      "text": "%r.shiny\n",
+      "user": "anonymous",
+      "dateUpdated": "Jun 15, 2021, 4:12:42 AM",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1623730362535_1317534129",
+      "id": "paragraph_1623730362535_1317534129",
+      "dateCreated": "Jun 15, 2021, 4:12:42 AM",
+      "status": "READY"
+    }
+  ],
+  "name": "2. Shiny App",
+  "id": "2EZ66TM57",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-SNAPSHOT",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {},
+  "path": "/R Tutorial/2. Shiny App"
+}
