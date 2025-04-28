@@ -1,0 +1,71 @@
+{
+  "paragraphs": [
+    {
+      "text": "print(\"HI\")",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-23 17:52:18.527",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "org.apache.zeppelin.interpreter.InterpreterException: org.apache.zeppelin.interpreter.InterpreterException: Fail to open PythonInterpreter\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:76)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:844)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:752)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.FIFOScheduler.lambda$runJobInScheduler$0(FIFOScheduler.java:42)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\nCaused by: org.apache.zeppelin.interpreter.InterpreterException: Fail to open PythonInterpreter\n\tat org.apache.zeppelin.python.PythonInterpreter.open(PythonInterpreter.java:123)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:70)\n\t... 8 more\nCaused by: java.io.IOException: Fail to launch python process.\nTraceback (most recent call last):\n  File \"/tmp/python5006774934566965076/zeppelin_python.py\", line 20, in \u003cmodule\u003e\n    from py4j.java_gateway import java_import, JavaGateway, GatewayClient\n  File \"/tmp/python5006774934566965076/py4j-src-0.10.7.zip/py4j/java_gateway.py\", line 2467, in \u003cmodule\u003e\n  File \"/tmp/python5006774934566965076/py4j-src-0.10.7.zip/py4j/java_collections.py\", line 13, in \u003cmodule\u003e\nImportError: cannot import name \u0027MutableMapping\u0027 from \u0027collections\u0027 (/usr/lib/python3.10/collections/__init__.py)\n\n\tat org.apache.zeppelin.python.PythonInterpreter.createGatewayServerAndStartScript(PythonInterpreter.java:170)\n\tat org.apache.zeppelin.python.PythonInterpreter.open(PythonInterpreter.java:120)\n\t... 9 more\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1745410538797_190905602",
+      "id": "paragraph_1745410538797_190905602",
+      "dateCreated": "2025-04-23 17:45:38.798",
+      "dateStarted": "2025-04-23 17:52:18.548",
+      "dateFinished": "2025-04-23 17:52:25.233",
+      "status": "ERROR"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1745410556313_274261202",
+      "id": "paragraph_1745410556313_274261202",
+      "dateCreated": "2025-04-23 17:45:56.313",
+      "status": "READY"
+    }
+  ],
+  "name": "Untitled Note 1",
+  "id": "2KU1SWFWD",
+  "defaultInterpreterGroup": "python",
+  "version": "0.10.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}

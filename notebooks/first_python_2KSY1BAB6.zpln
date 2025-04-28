@@ -1,0 +1,201 @@
+{
+  "paragraphs": [
+    {
+      "text": "temp \u003d 2\nprint(temp)\nprint(\"changes update and data\")",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-25 18:12:43.060",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "2\nchanges update and data\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1745375616732_274019562",
+      "id": "paragraph_1745375616732_274019562",
+      "dateCreated": "2025-04-23 08:03:36.734",
+      "dateStarted": "2025-04-25 18:12:43.082",
+      "dateFinished": "2025-04-25 18:12:43.155",
+      "status": "FINISHED"
+    },
+    {
+      "text": "!pip install pandas",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-25 18:12:43.176",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Traceback (most recent call last):\n  File \"/tmp/python4374660776822223183/zeppelin_python.py\", line 152, in \u003cmodule\u003e\n    code \u003d compile(\u0027\\n\u0027.join(stmts), \u0027\u003cstdin\u003e\u0027, \u0027exec\u0027, ast.PyCF_ONLY_AST, 1)\n  File \"\u003cstdin\u003e\", line 1\n    !pip install pandas\n    ^\nSyntaxError: invalid syntax\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1745411007649_586765169",
+      "id": "paragraph_1745411007649_586765169",
+      "dateCreated": "2025-04-23 17:53:27.649",
+      "dateStarted": "2025-04-25 18:12:43.185",
+      "dateFinished": "2025-04-25 18:12:43.233",
+      "status": "ERROR"
+    },
+    {
+      "text": "!pip install pandas",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-23 17:56:47.458",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Traceback (most recent call last):\n  File \"/tmp/python489156884001892251/zeppelin_python.py\", line 152, in \u003cmodule\u003e\n    code \u003d compile(\u0027\\n\u0027.join(stmts), \u0027\u003cstdin\u003e\u0027, \u0027exec\u0027, ast.PyCF_ONLY_AST, 1)\n  File \"\u003cstdin\u003e\", line 1\n    !pip install pandas\n    ^\nSyntaxError: invalid syntax\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1745411187955_1510463052",
+      "id": "paragraph_1745411187955_1510463052",
+      "dateCreated": "2025-04-23 17:56:27.955",
+      "dateStarted": "2025-04-23 17:56:47.463",
+      "dateFinished": "2025-04-23 17:56:47.477",
+      "status": "ERROR"
+    },
+    {
+      "text": "pip install pandas",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-23 17:59:12.859",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Traceback (most recent call last):\n  File \"/tmp/python489156884001892251/zeppelin_python.py\", line 152, in \u003cmodule\u003e\n    code \u003d compile(\u0027\\n\u0027.join(stmts), \u0027\u003cstdin\u003e\u0027, \u0027exec\u0027, ast.PyCF_ONLY_AST, 1)\n  File \"\u003cstdin\u003e\", line 1\n    pip install pandas\n        ^\nSyntaxError: invalid syntax\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1745411207462_372592541",
+      "id": "paragraph_1745411207462_372592541",
+      "dateCreated": "2025-04-23 17:56:47.462",
+      "dateStarted": "2025-04-23 17:59:12.863",
+      "dateFinished": "2025-04-23 17:59:12.872",
+      "status": "ERROR"
+    },
+    {
+      "text": "",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-25 18:03:53.500",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1745411215386_49825662",
+      "id": "paragraph_1745411215386_49825662",
+      "dateCreated": "2025-04-23 17:56:55.386",
+      "status": "READY"
+    }
+  ],
+  "name": "first_python",
+  "id": "2KSY1BAB6",
+  "defaultInterpreterGroup": "python",
+  "version": "0.10.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {
+    "isRunning": true
+  }
+}
