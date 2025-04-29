@@ -361,9 +361,22 @@
       "status": "FINISHED"
     },
     {
+      "text": "for i in range(1,10):\n    print(i)",
       "user": "anonymous",
+      "dateUpdated": "2025-04-29 07:39:22.841",
       "progress": 0,
-      "config": {},
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
       "settings": {
         "params": {},
         "forms": {}
