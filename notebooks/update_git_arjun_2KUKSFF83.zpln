@@ -381,12 +381,39 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "1\n2\n3\n4\n5\n6\n7\n8\n9\n"
+          }
+        ]
+      },
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1745830877187_550223691",
       "id": "paragraph_1745830877187_550223691",
       "dateCreated": "2025-04-28 14:31:17.187",
+      "dateStarted": "2025-04-29 07:39:22.859",
+      "dateFinished": "2025-04-29 07:39:26.790",
+      "status": "FINISHED"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1745892562855_1780854152",
+      "id": "paragraph_1745892562855_1780854152",
+      "dateCreated": "2025-04-29 07:39:22.855",
       "status": "READY"
     }
   ],
