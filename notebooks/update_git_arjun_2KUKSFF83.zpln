@@ -443,7 +443,7 @@
     {
       "text": "for i in range(0,5):\n    print(i*2)",
       "user": "anonymous",
-      "dateUpdated": "2025-04-29 08:10:30.300",
+      "dateUpdated": "2025-04-29 08:10:36.280",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -461,12 +461,39 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "0\n2\n4\n6\n8\n"
+          }
+        ]
+      },
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1745892948158_19900550",
       "id": "paragraph_1745892948158_19900550",
       "dateCreated": "2025-04-29 07:45:48.158",
+      "dateStarted": "2025-04-29 08:10:36.302",
+      "dateFinished": "2025-04-29 08:10:36.518",
+      "status": "FINISHED"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1745894436295_754987959",
+      "id": "paragraph_1745894436295_754987959",
+      "dateCreated": "2025-04-29 08:10:36.302",
       "status": "READY"
     }
   ],
