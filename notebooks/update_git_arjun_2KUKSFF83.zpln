@@ -521,6 +521,86 @@
       "status": "FINISHED"
     },
     {
+      "text": "pritn(\"talllllllllllllllllll\")",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-30 15:12:45.370",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Fail to execute line 1: pritn(\"talllllllllllllllllll\")\nTraceback (most recent call last):\n  File \"/tmp/python10926511031632424871/zeppelin_python.py\", line 167, in \u003cmodule\u003e\n    exec(code, _zcUserQueryNameSpace)\n  File \"\u003cstdin\u003e\", line 1, in \u003cmodule\u003e\nNameError: name \u0027pritn\u0027 is not defined\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1745979814255_1908493485",
+      "id": "paragraph_1745979814255_1908493485",
+      "dateCreated": "2025-04-30 07:53:34.255",
+      "dateStarted": "2025-04-30 15:12:45.378",
+      "dateFinished": "2025-04-30 15:12:45.398",
+      "status": "ERROR"
+    },
+    {
+      "text": "print(\"Tallllllllllllllll\")",
+      "user": "anonymous",
+      "dateUpdated": "2025-04-30 15:13:00.461",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Tallllllllllllllll\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1746006165376_1308534862",
+      "id": "paragraph_1746006165376_1308534862",
+      "dateCreated": "2025-04-30 15:12:45.376",
+      "dateStarted": "2025-04-30 15:13:00.468",
+      "dateFinished": "2025-04-30 15:13:00.482",
+      "status": "FINISHED"
+    },
+    {
       "user": "anonymous",
       "progress": 0,
       "config": {},
@@ -531,9 +611,9 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1745979814255_1908493485",
-      "id": "paragraph_1745979814255_1908493485",
-      "dateCreated": "2025-04-30 07:53:34.255",
+      "jobName": "paragraph_1746006180465_2031220191",
+      "id": "paragraph_1746006180465_2031220191",
+      "dateCreated": "2025-04-30 15:13:00.465",
       "status": "READY"
     }
   ],
